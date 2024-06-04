@@ -5,74 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria ABC</title>
     <link rel="stylesheet" href="./css/estilo.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        nav {
-            background-color: #333;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        nav ul li {
-            float: left;
-        }
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background-color: #111;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 1em;
-        }
-        main {
-            flex: 3;
-            padding: 1em;
-        }
-        aside {
-            flex: 1;
-            background-color: #f4f4f4;
-            padding: 1em;
-            margin-left: 1em;
-        }
-        article {
-            background-color: #e2e2e2;
-            margin-bottom: 1em;
-            padding: 1em;
-            border-radius: 5px;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1em;
-        }
-        .service-item {
-            background-color: #e2e2e2;
-            padding: 1em;
-            border-radius: 5px;
-            flex: 1 1 calc(33.333% - 2em);
-            box-sizing: border-box;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -81,11 +13,18 @@
 
     <nav>
         <ul>
-            <li><a href="#home">Inicio</a></li>
+            <li><a href="login.html">Inicio secion</a></li>
             <li><a href="#services">Servicios</a></li>
             <li><a href="#contact">Contacto</a></li>
             <li><a href="#about">Acerca de</a></li>
         </ul>
+        <div id="slider">
+            <ul>
+                <li><img src="./img/Y-si-tu-perro-pudiera-vivir-cien-anos.jpg" alt="Imagen 1"></li>
+                <li><img src="./img/razas-pequenas-de-perros-corriendo.jpg.webp" alt="Imagen 2"></li>
+                <li><img src="./img/1653826510_995351_1653826595_noticia_normal_recorte1.jpg" alt="Imagen 3"></li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container">
@@ -94,54 +33,6 @@
                 <article>
                     <h2>Bienvenidos a Veterinaria ABC</h2>
                     <p>En Veterinaria ABC, nos dedicamos al cuidado y bienestar de sus mascotas. Nuestro equipo de profesionales está altamente capacitado para ofrecer una amplia gama de servicios para mantener a su mascota sana y feliz.</p>
-                </article>
-            </section>
-
-            <section id="services">
-                <h2>Servicios</h2>
-                <div class="services">
-                    <div class="service-item">
-                        <h3>Consulta General</h3>
-                        <p>Realizamos consultas generales para evaluar la salud de su mascota y proporcionar tratamientos preventivos.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Vacunación</h3>
-                        <p>Ofrecemos un completo programa de vacunación para proteger a su mascota contra enfermedades comunes.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Cirugía</h3>
-                        <p>Contamos con un equipo quirúrgico de última generación para realizar cirugías con seguridad y eficacia.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Odontología</h3>
-                        <p>Brindamos servicios de limpieza dental y tratamiento de enfermedades bucales para su mascota.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Emergencias</h3>
-                        <p>Atendemos emergencias las 24 horas para garantizar que su mascota reciba atención inmediata cuando más lo necesita.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Peluquería</h3>
-                        <p>Nuestros servicios de peluquería aseguran que su mascota luzca y se sienta de maravilla.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact">
-                <article>
-                    <h2>Contacto</h2>
-                    <p>Dirección: Calle Falsa 123, Ciudad, País</p>
-                    <p>Teléfono: (123) 456-7890</p>
-                    <p>Email: contacto@veterinariaabc.com</p>
-                    <form>
-                        <label for="name">Nombre:</label><br>
-                        <input type="text" id="name" name="name"><br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <label for="message">Mensaje:</label><br>
-                        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-                        <input type="submit" value="Enviar">
-                    </form>
                 </article>
             </section>
 
@@ -167,5 +58,7 @@
     <footer>
         <p>© 2024 Veterinaria ABC. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="./js/slider.js"></script>
 </body>
 </html>
