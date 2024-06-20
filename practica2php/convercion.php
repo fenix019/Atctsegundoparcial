@@ -39,15 +39,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de la Conversión</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Resultado de la Conversión</h1>
-    <?php if (!empty($resultado)): ?>
-        <p>El número decimal <?= htmlspecialchars($decimal) ?> en <?= htmlspecialchars($conversion) ?> es: <?= htmlspecialchars($resultado) ?></p>
-    <?php else: ?>
-        <p>No se pudo realizar la conversión.</p>
-    <?php endif; ?>
-    <a href="./index.html">Volver</a>
+    <div class="container">
+        <h1>Resultado de la Conversión</h1>
+        <?php if (!empty($resultado)): ?>
+            <p>El número decimal <?= htmlspecialchars($decimal) ?> en <?= htmlspecialchars($conversion) ?> es: <?= htmlspecialchars($resultado) ?></p>
+        <?php else: ?>
+            <p>No se pudo realizar la conversión.</p>
+        <?php endif; ?>
+        <a href="index.html">Volver</a>
+    </div>
 </body>
 </html>
