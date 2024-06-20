@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Particiones HTML con Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .custom-column {
+      height: 150px; 
+      border: 3px solid #000000;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 custom-column bg-white">
+      Columna 1 
+    </div>
+    <div class="col-md-9 custom-column bg-secondary">
+      Columna 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 custom-column bg-success">
+      Columna 1
+    </div>
+    <div class="col-md-3 custom-column bg-danger">
+      Columna 2
+    </div>
+    <div class="col-md-3 custom-column bg-warning">
+      Columna 3
+    </div>
+    <div class="col-md-3 custom-column bg-info">
+      Columna 4
+    </div>
+  </div>
+  <div class="row">
+    <div class="col custom-column bg-dark text-light">
+      Única columna en la tercera fila
+    </div>
+  </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Básica</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
 </head>
-<body>
-    <div class="calculadora">
-        <h2>Calculadora Básica</h2>
-        <input type="number" id="valor1" placeholder="Ingrese el primer valor">
-        <input type="number" id="valor2" placeholder="Ingrese el segundo valor">
-        <select id="operador">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-        </select>
-        <button onclick="calcular()">Calcular</button>
-        <div class="resultado" id="resultado"></div>
+<body class="bg-dark text-white">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="calculadora card p-4 shadow-lg" style="max-width: 300px; border-radius: 15px; background-color: #ffcccb;">
+            <h2 class="text-center mb-4 text-danger">Calculadora Básica</h2>
+            <div class="form-group">
+                <input type="number" id="valor1" class="form-control form-control-lg border-danger text-danger" placeholder="Ingrese el primer valor">
+            </div>
+            <div class="form-group">
+                <input type="number" id="valor2" class="form-control form-control-lg border-danger text-danger" placeholder="Ingrese el segundo valor">
+            </div>
+            <div class="form-group">
+                <select id="operador" class="form-control form-control-lg border-danger text-danger">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+            <button onclick="calcular()" class="btn btn-danger btn-lg btn-block">Calcular</button>
+            <div class="resultado mt-4 text-center text-warning font-weight-bold" id="resultado"></div>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/funcion.js"></script>
 </body>
-<script src="./js/funcion.js"></script>
 </html>
