@@ -48,6 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php else: ?>
         <p>No se pudo realizar la conversión.</p>
     <?php endif; ?>
-    <a href="index.html">Volver</a>
+    <a href="./index.html">Volver</a>
 </body>
 </html>
